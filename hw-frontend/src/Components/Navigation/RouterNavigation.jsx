@@ -17,7 +17,7 @@ export const RouterNavigation = () => {
                     <li> <Link to='/stresstraine'>Stressprogramm</Link></li>
                 </ul>
             </nav>
-            <Outlet />
+         <Outlet />
         </>
     )
 }

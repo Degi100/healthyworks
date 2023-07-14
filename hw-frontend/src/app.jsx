@@ -16,13 +16,13 @@ export const App = () => {
       <div className="NavRoutes">
         <Routes>
           <Route path="/" element={<RouterNavigation />} />
-          <Route path="/healthy" element={<HealthymanagementPage />} />
+          <Route path="/healthymanagement" element={<HealthymanagementPage />} />
           <Route path="/impressum" element={<ImpressumPage />} />
-          <Route path="/contact" element={<KontaktPage />} />
+          <Route path="/kontakt" element={<KontaktPage />} />
           <Route path="/nonsmoke" element={<NonsmokePage />} />
           <Route path="/relextraine" element={<RelextrainePage />} />
           <Route path="/startpage" element={<StartPage />} />
-          <Route pat="/stresstraine" element={<StresstrainePage />} />
+          <Route path="/stresstraine" element={<StresstrainePage />} />
         </Routes>
       </div>
     </Router>
