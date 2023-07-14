@@ -1,8 +1,10 @@
+import React from "react";
 
-import React from 'react'
+export const StartPage = () => {
 
-export const startpage = () => {
   return (
-    <div>startpage</div>
-  )
-}
+    <div>
+      <h1>Herzlich Willkommen. StartPage</h1>
+    </div>
+  );
+};

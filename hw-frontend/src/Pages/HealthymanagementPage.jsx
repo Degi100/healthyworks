@@ -5,3 +5,4 @@ export const HealthymanagementPage = () => {
     <div>HealthymanagementPage</div>
   )
 }
+

@@ -1,9 +1,7 @@
 import React from 'react'
 
-const ImpressumPage = () => {
+export const ImpressumPage = () => {
   return (
-    <div>ImpressumPage</div>
+    <div>ImpressumPage fasdpkjf;lsadkjf;lsdjn;fljsd;lfjmk</div>
   )
 }
-
-export default ImpressumPage
