@@ -4,8 +4,10 @@ export function App() {
  
   return (
     <>
-      <div>
-        Here We Go !
+      <div className='container-wrapper'>
+        <div className="top">Top</div>
+        <div className="main">Main</div>
+        <div className="footer">Footer</div>
      </div>
     </>
   )
