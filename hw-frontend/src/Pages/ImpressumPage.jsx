@@ -2,6 +2,9 @@ import React from 'react'
 
 export const ImpressumPage = () => {
   return (
-    <div><h1>ImpressumPage</h1></div>
+    <>
+    <div className='impressum'><h1>ImpressumPage</h1></div>
+    <p>Impressum</p>
+    </>
   )
 }
