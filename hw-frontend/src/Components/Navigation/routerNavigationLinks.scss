@@ -9,6 +9,11 @@ nav {
         justify-content: center;
         text-decoration: none;
         
+        .logo {
+            flex-direction: column;
+            justify-content: center;
+        }
+        
         li {
             list-style-type: none;
             padding: 2px;
