@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+   
+    li {
+    list-style-type: none;
+    padding: 4px;
+    }
+    
+}
+

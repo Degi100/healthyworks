@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../Navigation/routerNavigationLinks.scss"
 
 export const RouterNavigationLinks = () => {
     return (
@@ -13,7 +14,6 @@ export const RouterNavigationLinks = () => {
                     <li> <Link to='/relextraine'>Entspannungstraining</Link></li>
                     <li> <Link to='/stresstraine'>Stressprogramm</Link></li>
                     <li> <Link to='/unternehmen'>Unternehmen</Link></li>
-                    
                 </ul>
             </nav>
         </>

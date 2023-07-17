@@ -3,25 +3,7 @@
   margin: 0;
 }
 
-.container-wrapper {
+.navRoutes {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  .top {
-    background-color: red;
- 
-  }
-
-  .main {
-    background-color: blue;
-  }
-
-  .footer {
-    background-color: green;
-  }
-
-}
-
-.struggle {
-  color:pink
 }
