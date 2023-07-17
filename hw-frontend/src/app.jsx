@@ -9,6 +9,8 @@ import { NonsmokePage } from "./pages/NonsmokePage";
 import { RelextrainePage } from "./pages/RelextrainePage";
 import { StartPage } from "./pages/StartPage";
 import { StresstrainePage } from "./pages/StresstrainePage";
+import { Not__Found as Error404} from "./pages/Not__Found";
+
 
 export const App = () => {
   return (
@@ -23,6 +25,7 @@ export const App = () => {
           <Route path="/nonsmoke" element={<NonsmokePage />} />
           <Route path="/relextraine" element={<RelextrainePage />} />
           <Route path="/stresstraine" element={<StresstrainePage />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </>

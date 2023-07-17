@@ -12,6 +12,7 @@ export const RouterNavigation = () => {
                     <li> <Link to='/nonsmoke'>Rauchfrei</Link></li>
                     <li> <Link to='/relextraine'>Entspannungstraining</Link></li>
                     <li> <Link to='/stresstraine'>Stressprogramm</Link></li>
+                    
                 </ul>
             </nav>
         </>
