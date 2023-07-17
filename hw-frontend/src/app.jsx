@@ -1,5 +1,5 @@
 import "./app.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { RouterNavigation } from "./Components/Navigation/RouterNavigation";
 
 import { HealthymanagementPage } from "./pages/HealthymanagementPage";
@@ -12,19 +12,19 @@ import { StresstrainePage } from "./pages/StresstrainePage";
 
 export const App = () => {
   return (
-    <Router>
+    <>
       <div className="NavRoutes">
+        <RouterNavigation />
         <Routes>
-          <Route path="/" element={<RouterNavigation />} />
+          <Route path="/" element={<StartPage />} />
           <Route path="/healthymanagement" element={<HealthymanagementPage />} />
           <Route path="/impressum" element={<ImpressumPage />} />
           <Route path="/kontakt" element={<KontaktPage />} />
           <Route path="/nonsmoke" element={<NonsmokePage />} />
           <Route path="/relextraine" element={<RelextrainePage />} />
-          <Route path="/startpage" element={<StartPage />} />
           <Route path="/stresstraine" element={<StresstrainePage />} />
         </Routes>
       </div>
-    </Router>
+    </>
   );
 };
