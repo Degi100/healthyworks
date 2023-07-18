@@ -19,7 +19,7 @@ const ReadMore = ({ children }) => {
 
 const Content = () => {
   return (
-
+<>
     <div className="container">
       <h2>
         <ReadMore>
@@ -44,7 +44,7 @@ const Content = () => {
         </ReadMore>
       </h2>
     </div>
+</>
   );
 };
-
 export default Content;
