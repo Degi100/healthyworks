@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Components/content.scss";
+import "../Components/readMore.scss";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -19,6 +19,7 @@ const ReadMore = ({ children }) => {
 
 const Content = () => {
   return (
+
     <div className="container">
       <h2>
         <ReadMore>
