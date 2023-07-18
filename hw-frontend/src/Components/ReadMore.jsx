@@ -39,7 +39,7 @@ const Content = () => {
           unterstützt Sie gerne bei dieser Aufgabe. Wir bieten Ihnen
           individuelle Lösungen zur betrieblichen Gesundheitsförderung, die
           speziell auf die Bedürfnisse und Ressourcen ihres Unternehmens
-          zugeschnitten werden. Kommen Sie gerne auf uns zu. Kontakt
+          zugeschnitten werden. Kommen Sie gerne auf uns zu. Kontakt 
         </ReadMore>
       </h2>
     </div>
