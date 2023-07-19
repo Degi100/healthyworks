@@ -23,7 +23,7 @@ const Content = () => {
     <div className="container">
       <h2>
         <ReadMore>
-          Mit HealthyWork gesund in die Zukunft! Faktoren, wie der
+          Stressprogramm: Mit HealthyWork gesund in die Zukunft! Faktoren, wie der
           demographische Wandel, der Fachkräftemangel und die Zunahme von
           psychischen Erkrankungen, stellen Unternehmen vor großen
           Herausforderungen. Das Durchschnittsalter der Mitarbeiter steigt und
