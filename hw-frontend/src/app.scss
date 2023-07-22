@@ -4,14 +4,33 @@
 }
 
 .content-wrapper {
-  width: 5rem;
+  width: 100%;
   display: flex;  
-  height: auto;
+  background-color: lightblue;
+
+  .contentData {
+    display: flex;
+    text-align: center;
+
+    .betriebliches-gesundheitsmanagement{
+      background-color: rgb(67, 77, 185);
+    }
+    .stressmanagement-training{
+      background-color: rgb(118, 118, 226);
+    }
+    .entspannung-training{
+      background-color: burlywood;
+    }
+    .rauchfrei-programm {
+      background-color: rebeccapurple;
+    }
+  }
     .layer-wrapper {
+      color: white;
       display: flex;
       justify-content: center;
       flex-direction: row;
-      background-color: rgb(26, 39, 123);
+      background-color: rgb(29, 8, 210);
       position:fixed;
     }
 }

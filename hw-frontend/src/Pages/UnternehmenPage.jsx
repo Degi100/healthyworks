@@ -13,8 +13,8 @@ export const UnternehmenPage = () => {
               <h1>{content.unternehmen.headline}</h1>
             </div>
             <div className="layer-wrapper">
-            <p>{content.unternehmen.discription}</p>
             <img src={img} width={200} alt={content.unternehmen.imgDisc} />
+            <p>{content.unternehmen.discription}</p>
             </div>
           </div>
         ))}

@@ -8,15 +8,8 @@ export const Leistungen = () => {
   const [isCategorie2, setIsCategorie2] = useState(true);
   const [isCategorie3, setIsCategorie3] = useState(true);
   const [isCategorie4, setIsCategorie4] = useState(true);
-  const [ishover, setHover] = useState(false);
   
-  const handleMouseIn = () => {
-    setHover(true);
-  }
-
-  const handleMouseOut = () => {
-    setHover(false);
-  }
+ 
 
   return (
     <>
@@ -36,7 +29,7 @@ export const Leistungen = () => {
                       100
                     ) + "..."
                   : content.leistungen.categories.categorie1.discription}
-                <button onMouseOver={handleMouseIn} onMouseOut={handleMouseOut} onClick={() => setIsCategorie1(!isCategorie1)}>
+                <button onClick={() => setIsCategorie1(!isCategorie1)}>
                   {isCategorie1 ? "Read More" : "read Less"}
                 </button>
               </p>
