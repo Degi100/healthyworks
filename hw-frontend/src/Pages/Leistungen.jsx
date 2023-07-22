@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import content from "../data/content.json";
+import "../app.scss";
+
 
 export const Leistungen = () => {
   const [isCategorie1, setIsCategorie1] = useState(true);
@@ -9,7 +11,7 @@ export const Leistungen = () => {
 
   return (
     <>
-      <class className="leistungen">
+      <div className="content-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
             <div className="headline-leitungen">
@@ -77,7 +79,7 @@ export const Leistungen = () => {
             </div>
           </div>
         ))}
-      </class>
+      </div>
 
       <div className="healthyM-wrapper">{/* <Content /> */}</div>
     </>

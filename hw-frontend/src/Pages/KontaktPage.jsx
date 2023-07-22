@@ -1,11 +1,12 @@
 import React from "react";
 import content from "../data/content.json";
 import ContactForm from "../Components/Form/ContactForm";
+import "../app.scss";
 
 export const KontaktPage = () => {
   return (
     <>
-      <class className="Kontakt">
+      <div className="content-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
             <div className="headline-Kontakt">
@@ -17,7 +18,7 @@ export const KontaktPage = () => {
             </div>
           </div>
         ))}
-      </class>
+      </div>
     </>
   );
 };

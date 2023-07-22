@@ -12,7 +12,7 @@ export const StartPage = () => {
         <div className="imageCarousel">
           <ImageCarousel />
         </div>
-        <div className="content">
+        <div className="content-wrapper">
           {content.map((content, i) => (
             <div className="contentData" key={i}>
               <h1>{content.startPage.headline}</h1>

@@ -1,10 +1,11 @@
 import React from "react";
 import content from "../data/content.json";
+import "../app.scss";
 
 export const ImpressumPage = () => {
   return (
     <>
-      <class className="Impressum">
+      <div className="content-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
             <div className="headline-impressum">
@@ -13,7 +14,7 @@ export const ImpressumPage = () => {
             <p>{content.impressum.discription}</p>
           </div>
         ))}
-      </class>
+      </div>
     </>
   );
 };

@@ -1,11 +1,12 @@
 import React from "react";
 import content from "../data/content.json";
 import img from "../assets/jennyjen.jpg";
+import "../app.scss";
 
 export const UnternehmenPage = () => {
   return (
     <>
-      <class className="unternehmen">
+      <div className="content-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
             <div className="headline-unternehmen">
@@ -15,7 +16,7 @@ export const UnternehmenPage = () => {
             <img src={img} width={200} alt={content.unternehmen.imgDisc} />
           </div>
         ))}
-      </class>
+      </div>
     </>
   );
 };
