@@ -1,6 +1,6 @@
 import React from "react";
 import content from "../data/content.json";
-import img from '../assets/jennyjen.jpg'
+import img from "../assets/jennyjen.jpg";
 
 export const UnternehmenPage = () => {
   return (
@@ -12,13 +12,10 @@ export const UnternehmenPage = () => {
               <h1>{content.unternehmen.headline}</h1>
             </div>
             <p>{content.unternehmen.discription}</p>
-             <img src={img} width={200}alt="Bild von Jenny Jen" />
-            
+            <img src={img} width={200} alt={content.unternehmen.imgDisc} />
           </div>
         ))}
       </class>
-
-      <div className="healthyM-wrapper">{/* <Content /> */}</div>
     </>
   );
 };
