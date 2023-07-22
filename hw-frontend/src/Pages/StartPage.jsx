@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { ImageCarousel } from "../Components/ImageCarousel/ImageCarousel";
 import content from "../data/content.json";
 import "../app.scss";
 
 export const StartPage = () => {
+  const [isTruncated, setIsTruncated] = useState(true);
+
   return (
     <>
       <div>
-        <class className="imageCarousel">
+        <div className="imageCarousel">
           <ImageCarousel />
-        </class>
+        </div>
         <div className="content">
           {content.map((content, i) => (
             <div className="contentData" key={i}>
-              <h1>{content.headlineStart}</h1>
-              <p>{content.discriptionStart}</p>
+              <h1>{content.startPage.headline}</h1>
+                
+                {isTruncated
+                  ? content.startPage.discription.slice(0, 200) + "..."
+                  : content.startPage.discription}{" "}
+              <button onClick={() => setIsTruncated(!isTruncated)}>
+                {isTruncated ? "Read More" : "read Less"}
+              </button>
+
             </div>
           ))}
         </div>
