@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Content from "../Components/ReadMore";
 import content from "../data/content.json";
 
 export const Leistungen = () => {
