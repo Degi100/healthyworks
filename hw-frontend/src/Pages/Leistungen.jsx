@@ -8,6 +8,15 @@ export const Leistungen = () => {
   const [isCategorie2, setIsCategorie2] = useState(true);
   const [isCategorie3, setIsCategorie3] = useState(true);
   const [isCategorie4, setIsCategorie4] = useState(true);
+  const [ishover, setHover] = useState(false);
+  
+  const handleMouseIn = () => {
+    setHover(true);
+  }
+
+  const handleMouseOut = () => {
+    setHover(false);
+  }
 
   return (
     <>
@@ -24,10 +33,10 @@ export const Leistungen = () => {
                 {isCategorie1
                   ? content.leistungen.categories.categorie1.discription.slice(
                       0,
-                      200
+                      100
                     ) + "..."
                   : content.leistungen.categories.categorie1.discription}
-                <button onClick={() => setIsCategorie1(!isCategorie1)}>
+                <button onMouseOver={handleMouseIn} onMouseOut={handleMouseOut} onClick={() => setIsCategorie1(!isCategorie1)}>
                   {isCategorie1 ? "Read More" : "read Less"}
                 </button>
               </p>
@@ -39,7 +48,7 @@ export const Leistungen = () => {
                 {isCategorie2
                   ? content.leistungen.categories.categorie2.discription.slice(
                       0,
-                      200
+                      100
                     ) + "..."
                   : content.leistungen.categories.categorie2.discription}
                 <button onClick={() => setIsCategorie2(!isCategorie2)}>
@@ -54,7 +63,7 @@ export const Leistungen = () => {
                 {isCategorie3
                   ? content.leistungen.categories.categorie3.discription.slice(
                       0,
-                      200
+                      100
                     ) + "..."
                   : content.leistungen.categories.categorie3.discription}
                 <button onClick={() => setIsCategorie3(!isCategorie3)}>
@@ -69,7 +78,7 @@ export const Leistungen = () => {
                 {isCategorie4
                   ? content.leistungen.categories.categorie4.discription.slice(
                       0,
-                      200
+                      100
                     ) + "..."
                   : content.leistungen.categories.categorie4.discription}
                 <button onClick={() => setIsCategorie4(!isCategorie4)}>
