@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageCarousel } from "../Components/ImageCaroussel/ImageCarousel";
+import { ImageCarousel } from "../Components/ImageCarousel/ImageCarousel";
 import "../app.scss";
 
 export const StartPage = () => {
@@ -7,7 +7,7 @@ export const StartPage = () => {
     <>
       <div>
         <h1>Herzlich Willkommen.</h1>
-          <ImageCarousel />
+          <class className="imageCarousel"><ImageCarousel /></class>
       </div>
     </>
   );
