@@ -8,17 +8,25 @@ export const Leistungen = () => {
       <class className="leistungen">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
-            <div className="headline">
+            <div className="headline-leitungen">
               <h1>{content.leistungen.headline}</h1>
             </div>
             <p>{content.leistungen.discription}</p>
             <div className="betriebliches-gesundheitsmanagement">
-              <h2>{content.leistungen.categories.categorie1.section}</h2>
+              <h2>{content.leistungen.categories.categorie1.headline}</h2>
               <p>{content.leistungen.categories.categorie1.discription}</p>
             </div>
             <div className="stressmanagement-training">
-              <h2>{content.leistungen.categories.categorie2.section}</h2>
+              <h2>{content.leistungen.categories.categorie2.headline}</h2>
               <p>{content.leistungen.categories.categorie2.discription}</p>
+            </div>
+            <div className="entspannung-training">
+              <h2>{content.leistungen.categories.categorie3.headline}</h2>
+              <p>{content.leistungen.categories.categorie3.discription}</p>
+            </div>
+            <div className="rauchfrei-programm">
+              <h2>{content.leistungen.categories.categorie4.headline}</h2>
+              <p>{content.leistungen.categories.categorie4.discription}</p>
             </div>
           </div>
         ))}
