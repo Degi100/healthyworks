@@ -16,7 +16,7 @@ export const Leistungen = () => {
       <div className="content-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
-            <div className="headline-leitungen">
+            <div className="headline-leistungen">
               <h1>{content.leistungen.headline}</h1>
             </div>
             <p>{content.leistungen.discription}</p>

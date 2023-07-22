@@ -5,34 +5,55 @@
 
 .content-wrapper {
   width: 100%;
-  display: flex;  
+  display: flex;
   background-color: lightblue;
 
-  .contentData {
+  .contentData, button {
     display: flex;
-    text-align: center;
+    text-align: left;
 
-    .betriebliches-gesundheitsmanagement{
+    button {
+      margin-top: 5px;
+    }
+    p,
+    h2 {
+      margin: 15px;
+    }
+
+    .headline-leistungen, p, h2 {
+      margin: 15px;
+    }
+
+    .betriebliches-gesundheitsmanagement {
       background-color: rgb(67, 77, 185);
+      width: 400px;
+
     }
-    .stressmanagement-training{
+
+    .stressmanagement-training {
       background-color: rgb(118, 118, 226);
+      width: 400px;
     }
-    .entspannung-training{
+
+    .entspannung-training {
       background-color: burlywood;
+      width: 400px;
     }
+
     .rauchfrei-programm {
+      width: 400px;
       background-color: rebeccapurple;
     }
   }
-    .layer-wrapper {
-      color: white;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      background-color: rgb(29, 8, 210);
-      position:fixed;
-    }
+
+  .layer-wrapper {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(29, 8, 210);
+    position: fixed;
+  }
 }
 
 a {
