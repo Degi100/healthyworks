@@ -8,13 +8,12 @@
   display: flex;
   background-color: lightblue;
 
-  .contentData, button {
+  .contentData{
     display: flex;
+    flex-direction: row;
     text-align: left;
 
-    button {
-      margin-top: 5px;
-    }
+ 
     p,
     h2 {
       margin: 15px;
@@ -56,11 +55,8 @@
   }
 }
 
-a {
-  display: inline-block;
-  position: relative;
-}
-
 button {
+  display: flex;
+  margin-top: 5px;
   cursor: pointer;
 }
