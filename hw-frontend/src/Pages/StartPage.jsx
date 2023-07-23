@@ -20,7 +20,7 @@ export const StartPage = () => {
                 {isTruncated
                   ? content.startPage.discription.slice(0, 200) + "..."
                   : content.startPage.discription}{" "}
-              <button onClick={() => setIsTruncated(!isTruncated)}>
+              <button className="readMore-button" onClick={() => setIsTruncated(!isTruncated)}>
                 {isTruncated ? "Read More" : "read Less"}
               </button>
 

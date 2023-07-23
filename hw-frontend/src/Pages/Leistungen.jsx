@@ -29,13 +29,13 @@ export const Leistungen = () => {
                       100
                     ) + "..."
                   : content.leistungen.categories.categorie1.discription}
-                <button onClick={() => setIsCategorie1(!isCategorie1)}>
+                <button className="readMore-button" onClick={() => setIsCategorie1(!isCategorie1)}>
                   {isCategorie1 ? "Read More" : "read Less"}
                 </button>
               </p>
             </div>
             <div className="stressmanagement-training">
-              <h2>{content.leistungen.categories.categorie2.headline}</h2>
+              <h2><br />{content.leistungen.categories.categorie2.headline}</h2>
               <p>
                 {" "}
                 {isCategorie2
@@ -44,13 +44,13 @@ export const Leistungen = () => {
                       100
                     ) + "..."
                   : content.leistungen.categories.categorie2.discription}
-                <button onClick={() => setIsCategorie2(!isCategorie2)}>
+                <button className="readMore-button" onClick={() => setIsCategorie2(!isCategorie2)}>
                   {isCategorie2 ? "Read More" : "read Less"}
                 </button>
               </p>
             </div>
             <div className="entspannung-training">
-              <h2>{content.leistungen.categories.categorie3.headline}</h2>
+              <h2><br />{content.leistungen.categories.categorie3.headline}</h2>
               <p>
                 {" "}
                 {isCategorie3
@@ -59,13 +59,13 @@ export const Leistungen = () => {
                       100
                     ) + "..."
                   : content.leistungen.categories.categorie3.discription}
-                <button onClick={() => setIsCategorie3(!isCategorie3)}>
+                <button className="readMore-button" onClick={() => setIsCategorie3(!isCategorie3)}>
                   {isCategorie3 ? "Read More" : "read Less"}
                 </button>
               </p>
             </div>
             <div className="rauchfrei-programm">
-              <h2>{content.leistungen.categories.categorie4.headline}</h2>
+              <h2><br />{content.leistungen.categories.categorie4.headline}</h2>
               <p>
                 {" "}
                 {isCategorie4
@@ -74,7 +74,7 @@ export const Leistungen = () => {
                       100
                     ) + "..."
                   : content.leistungen.categories.categorie4.discription}
-                <button onClick={() => setIsCategorie4(!isCategorie4)}>
+                <button className="readMore-button" onClick={() => setIsCategorie4(!isCategorie4)}>
                   {isCategorie4 ? "Read More" : "read Less"}
                 </button>
               </p>
