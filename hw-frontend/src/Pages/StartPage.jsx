@@ -15,7 +15,9 @@ export const StartPage = () => {
         <div className="content-wrapper">
           {content.map((content, i) => (
             <div className="contentData" key={i}>
+              <div className="headline-startPage">
               <h1>{content.startPage.headline}</h1>
+              </div>
                 
                 {isTruncated
                   ? content.startPage.discription.slice(0, 200) + "..."

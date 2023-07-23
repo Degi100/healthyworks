@@ -6,14 +6,18 @@
 .content-wrapper {
   display: flex;
   justify-content: left;
-  background-color: rgb(58, 179, 21);
-  position: fixed;
+  background-color: rgb(74, 189, 92);
   align-items: left;
-  text-align:justify;
+  position: relative;
+  text-align: justify;
+  border-radius: 7px;
+
+
   .contentData {
     display: flex;
     flex-direction: row;
     text-align: left;
+
 
     p,
     h2 {
@@ -35,6 +39,7 @@
     .betriebliches-gesundheitsmanagement {
       background-color: rgb(67, 77, 185);
       width: 400px;
+      border: 1px black solid;
 
       p {
         font-style: italic;
