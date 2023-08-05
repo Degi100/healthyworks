@@ -1,16 +1,30 @@
 @media (max-width: 576px) {
   nav {
-    ul {
-      background-color: rgb(189, 181, 181);
+    background-color: rgb(189, 181, 181);
+
+    .burger-menu-icon {
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        width: max-content;
+        background-color: rgba(179, 175, 175, 0.389);
+        z-index: 1;
+      }
+    }
+
+    .burger-menu-icon:hover {
+      .dropdown-content {
+        display: block;
+      }
     }
   }
+}
 
-  .content-wrapper {
-    display: flex;
+.content-wrapper {
+  display: flex;
 
-    .layer-wrapper {
-      background-color: red;
-    }
+  .layer-wrapper {
+    background-color: red;
   }
 }
 
@@ -23,7 +37,7 @@
 }
 
 @media (min-width: 992px) {
-    .content-wrapper {
+  .content-wrapper {
     .layer-wrapper {
       background-color: rgb(19, 69, 134);
     }

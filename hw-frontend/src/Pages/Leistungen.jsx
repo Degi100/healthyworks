@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import content from "../data/content.json";
 import "../app.scss";
 
-
 export const Leistungen = () => {
   const [isCategorie1, setIsCategorie1] = useState(true);
   const [isCategorie2, setIsCategorie2] = useState(true);
   const [isCategorie3, setIsCategorie3] = useState(true);
   const [isCategorie4, setIsCategorie4] = useState(true);
-  
- 
 
   return (
     <>
