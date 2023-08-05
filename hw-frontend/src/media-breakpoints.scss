@@ -1,17 +1,24 @@
 @media (max-width: 576px) {
   nav {
-
     .nav-wrapper {
-      ul {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-
-        li {
-          font-size: larger;
-          margin: 5px;
-        }
+      .nav-content {
+      display: none;
+      z-index: 2;
+      position: absolute;
       }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+
+      li {
+        font-size: larger;
+        margin: 5px;
+      }
+
+
     }
 
     .burger-menu-icon {
@@ -26,6 +33,10 @@
     .burger-menu-icon:hover {
       .dropdown-content {
         display: block;
+        a:hover {
+        text-decoration: underline green;
+       
+       }
       }
     }
   }
@@ -34,9 +45,6 @@
 .content-wrapper {
   display: flex;
 
-  .layer-wrapper {
-    background-color: red;
-  }
 }
 
 .contentData {
@@ -44,43 +52,35 @@
   flex-direction: column;
 }
 
-
 @media (min-width: 768px) {
-nav {
-
+  nav {
     .nav-wrapper {
-      ul {
-        display: flex;
-        flex-direction: row;
-
-        li {
-          font-size: larger;
-          margin: 5px;
-        }
+      .burger-menu-icon {
+        display: none;
       }
     }
 
-    .burger-menu-icon {
-      .dropdown-content {
-        position: absolute;
-      }
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+       li{
+        padding: 5px;
+        font-size: larger;
+       }
+ 
     }
-
-    .burger-menu-icon {
-      display: none;
-   
+    .nav-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+       a:hover {
+        text-decoration: underline green;
+       
+       }
+    }
     }
   }
-}
-
-
-@media (min-width: 992px) {
-  .content-wrapper {
-    .layer-wrapper {
-      background-color: rgb(19, 69, 134);
-    }
-  }
-}
 
 @media (min-width: 1200px) {}
 

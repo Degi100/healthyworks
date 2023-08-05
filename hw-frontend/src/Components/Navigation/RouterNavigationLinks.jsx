@@ -10,12 +10,12 @@ export const RouterNavigationLinks = () => {
     <>
       <nav>
         <div className="nav-wrapper">
-            <li className="logo">
-              <Link to="/">
-                <img src={logo} width={300} alt="Logo"></img>
-              </Link>
-            </li>
-          <ul className="contacts-icons">
+          <li className="logo">
+            <Link to="/">
+              <img src={logo} width={300} alt="Logo"></img>
+            </Link>
+          </li>
+          <ul className="contact-icons">
             <li>
               <Link to="/">
                 <Phone />
@@ -27,13 +27,30 @@ export const RouterNavigationLinks = () => {
               </Link>
             </li>
 
-          <ul className="burger-menu-icon">
-            <li>
-              <Link to="/">
-                <Burger />
-              </Link>
-            </li>
-            <ul className="dropdown-content">
+            <ul className="burger-menu-icon">
+              <li>
+                <Link to="/">
+                  <Burger />
+                </Link>
+              </li>
+              <ul className="dropdown-content">
+                <li>
+                  <Link to="/unternehmen">Unternehmen</Link>
+                </li>
+                <li>
+                  <Link to="/leistungen">Leistungen</Link>
+                </li>
+                <li>
+                  <Link to="/impressum">Impressum</Link>
+                </li>
+                <li>
+                  <Link to="/kontakt">Kontakt</Link>
+                </li>
+              </ul>
+            </ul>
+            
+          </ul>
+          <ul className="nav-content">
               <li>
                 <Link to="/unternehmen">Unternehmen</Link>
               </li>
@@ -47,8 +64,6 @@ export const RouterNavigationLinks = () => {
                 <Link to="/kontakt">Kontakt</Link>
               </li>
             </ul>
-          </ul>
-          </ul>
         </div>
       </nav>
     </>
