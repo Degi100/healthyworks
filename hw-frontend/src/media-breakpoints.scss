@@ -39,15 +39,11 @@
     background-color: red;
   }
 }
-
-.content-contact-wrapper {
-  background-color: rgb(204, 214, 122);
-
   .contentData {
     display: flex;
     flex-direction: column;
   }
-}
+
 
 @media (min-width: 768px) {
   .content-wrapper {
