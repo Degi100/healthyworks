@@ -12,11 +12,11 @@ li {
 }
 
 .content-wrapper {
-  background-color: rgb(154, 202, 161);
 
   .contentData {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 5px;
 
     .readMore-button {
@@ -32,7 +32,8 @@ li {
     .betriebliches-gesundheitsmanagement,
     .stressmanagement-training,
     .entspannung-training,
-    .rauchfrei-programm {
+    .rauchfrei-programm,
+    .contact {
       display: flex;
       flex-direction: column;
 

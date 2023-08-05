@@ -6,7 +6,7 @@ import "../app.scss";
 export const KontaktPage = () => {
   return (
     <>
-      <div className="content-wrapper">
+      <div className="content-contact-wrapper">
         {content.map((content, i) => (
           <div className="contentData" key={i}>
             <div className="headline-Kontakt">
