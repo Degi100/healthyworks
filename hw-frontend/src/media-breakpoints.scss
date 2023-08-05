@@ -1,8 +1,13 @@
 @media (max-width: 576px) {
+  nav {
+    ul {
+      background-color: rgb(189, 181, 181);
+    }
+  }
+
   .content-wrapper {
-    width: max-content;
-   
-  
+    display: flex;
+
     .layer-wrapper {
       background-color: red;
     }

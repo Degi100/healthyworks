@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../Navigation/routerNavigationLinks.scss"
 import { BsWhatsapp as Phone } from 'react-icons/bs';
 import { AiOutlineMail as Email} from 'react-icons/ai'
 import logo from '../../assets/logoComplete.png'
+import '../../app.scss'
 
 export const RouterNavigationLinks = () => {
     return (
