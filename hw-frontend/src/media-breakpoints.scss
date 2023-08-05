@@ -1,13 +1,27 @@
 @media (max-width: 576px) {
   nav {
     background-color: rgb(189, 181, 181);
+    display: flex;
+
+    .nav-wrapper {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        li {
+          font-size: larger;
+          margin: 5px;
+        }
+      }
+    }
+
 
     .burger-menu-icon {
       .dropdown-content {
         display: none;
         position: absolute;
         width: max-content;
-        background-color: rgba(179, 175, 175, 0.389);
+        background-color: rgb(179, 175, 175);
         z-index: 1;
       }
     }
